@@ -1,0 +1,12 @@
+pipeline {
+    agent {
+        label 'node2-pipe2-label'
+    }
+    stages {
+        stage('build') {
+            steps {
+                echo "hello welcome to sujith jenkins"
+            }
+        }
+    }
+}
