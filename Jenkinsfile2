@@ -3,9 +3,10 @@ pipeline {
         label 'node2-pipe2-label'
     }
     stages {
-        stage('build') {
+        stage('Maven') {
             steps {
-                echo "hello welcome to sujith jenkins"
+                echo "hello welcome to sujith Maven"
+                  sh "mvn --version"
             }
         }
     }
