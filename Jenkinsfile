@@ -1,17 +1,9 @@
 pipeline {
     agent any
-
     stages {
-        stage('Checkout') {
+        stage('build') {
             steps {
-                git url: 'https://github.com/sujithdevops57/pipelines-prac.git', branch: 'main'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Building project...'
-                sh 'echo Hello from Jenkins!'
+                echo "hello welcome to jenkins"
             }
         }
     }
