@@ -6,6 +6,7 @@ pipeline {
         stage('build') {
             steps {
                 echo "hello welcome to jenkins"
+                echo "hi sujith 5657"
             }
         }
     }
